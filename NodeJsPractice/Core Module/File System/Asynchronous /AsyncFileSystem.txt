@@ -1,0 +1,2 @@
+update the first file added by writeFileSyn
+added a new line in the text file

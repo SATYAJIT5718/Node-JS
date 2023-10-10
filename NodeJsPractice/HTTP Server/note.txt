@@ -1,0 +1,21 @@
+1.The http.createServer() method includes request and response parameter which is supplied by node.js
+2.The request object can be use to get the information about the current HTTP request 
+i.e. url, request header and data
+
+Usage:- 
+
+const http = require("http");
+
+create the server with some request and fetch the response:-
+
+const server = http.createServer((req, res) => {
+  res.end("Hello from server");
+});
+
+8080 is port number and 127.0.0.1 is localhost IP:-
+
+server.listen(8080, "127.0.0.1", () => {
+  console.log("listening to the port number 8080");
+});
+
+Output:- on 127.0.0.1:8080 you can see "Hello from server

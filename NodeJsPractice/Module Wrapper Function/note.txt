@@ -1,0 +1,19 @@
+Q. What is module wrapper function?
+
+    const name = "satya";
+    console.log("name", name);
+    module.exports = {name};
+
+Basically module wrapper function create anonomous function in the file like below example.
+
+(function (exports, require, module, __filename, __dirname) {
+  const name = "satya";
+  console.log("name", name);
+  module.exports = {name};
+})();
+Note- add one more parenthesis() to invoke the function directly
+
+that's why we are able to use require,exports in any file.
+
+Basically it's a advance javascript feature :-
+IIFE- Immediately Invoked Function Expression

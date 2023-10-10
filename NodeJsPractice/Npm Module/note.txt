@@ -13,6 +13,8 @@ chalk.blue.inverse("I am Chalk") // blue background color with new text color
 
 
 2.Validator :- For validate data( return true/false boolen value)
+Installation :- npm i validator
+Usage:-
 const EmailId = "satya@gmail.com";
 const emailValidator = validator.isEmail(EmailId);
 console.log("emailValidator"); o/p - true
@@ -21,3 +23,9 @@ console.log("emailValidator"); o/p - true
 console.log(
   "Is email ?", emailValidator ? chalk.green.inverse(emailValidator): chalk.red.inverse(emailValidator),
 );
+
+4.Nodemon :- nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+Installation:- npm i nodemon -g(install it globally so we can use it all project)
+check version:- nodemon -v
+usage:- nodemon index.js(to automatically run the server on changes on file)
+exit: control + c

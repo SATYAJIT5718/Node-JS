@@ -1,9 +1,16 @@
+// CRUD operation with FS module - Synchronous method:-
+
+//1.create a folder by fs module.
+//2.create file and add content by fs module
+//3.update the file content by fs module
+//4.read the file content without buffer data
+//5.rename the file
+//6.delete the file
+//7.delete the folder
+
 const fs = require("fs");
 
-//To create a folder :-
 fs.mkdir("SynchronousChallenge", () => {});
-
-// To write/create the File:- (if file name is not there node.js will aumatically create the file else override the content of the file)
 fs.writeFile(
   "SynchronousChallenge/SyncFileSystem.text",
   "my First line",
@@ -11,8 +18,6 @@ fs.writeFile(
     console.log("file created successfully");
   },
 );
-
-//to add new data without affecting the existing data
 fs.appendFile(
   "SynchronousChallenge/SyncFileSystem.text",
   "\n my 2nd line",
@@ -20,13 +25,9 @@ fs.appendFile(
     console.log("2nd line inserted succesfully");
   },
 );
-
-// To read data from file :-
 fs.readFile("SynchronousChallenge/SyncFileSystem.text", (err, data) => {
   console.log("file buffer data :", data);
 });
-
-// to get the convert the binary data to string (use utf-8)
 fs.readFile(
   "SynchronousChallenge/SyncFileSystem.text",
   "utf-8",
@@ -34,8 +35,6 @@ fs.readFile(
     console.log("file string data :", data);
   },
 );
-
-//To Rename the file:-
 fs.rename(
   "SynchronousChallenge/SyncFileSystem.text",
   "SynchronousChallenge/SyncFileSystems.text",
@@ -43,8 +42,6 @@ fs.rename(
     console.log("file named successfully");
   },
 );
-
-//To delete a file :-
 fs.unlink("SynchronousChallenge/SyncFileSystems.text", (err) => {
   console.log("file deleted successfully");
   console.log("err", err);

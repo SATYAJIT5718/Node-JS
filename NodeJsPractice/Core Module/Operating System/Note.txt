@@ -1,0 +1,7 @@
+The Node.js operating system module allows you get OS(operationg system) related information.
+
+To include the Operating System module, use the require() method:-
+
+let os = require('os');
+
+DOC link for FS module :- https://nodejs.org/dist/latest-v18.x/docs/api/os.html

@@ -1,0 +1,14 @@
+The Node.js file system module allows you to work with the file system on your computer.
+
+To include the File System module, use the require() method:-
+
+let fs = require('fs');
+
+Common use for the File System module:-
+1.Read files
+2.Create files
+3.Update files
+4.Delete files
+5.Rename files
+
+DOC link for FS module :- https://nodejs.org/dist/latest-v18.x/docs/api/fs.html

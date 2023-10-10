@@ -1,0 +1,9 @@
+Basically here we can create our own custom module, so we can import it and use it anywhere.
+
+Rule 1:- Need to export modules
+
+example:- module.exports = {add, sub, mult, div};
+
+Rule 2 :- Need to import modules in parent file(working dir file)
+
+example:- const {add,sub,mult,div} = require("./ownModules");

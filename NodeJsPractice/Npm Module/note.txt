@@ -1,0 +1,23 @@
+How to use NPM packages in node.js?
+NPM - Node Package Manager / Module
+
+1. Chalk :- For color coding for text 
+installation :- npm i  Chalk
+usage : 
+
+const chalk = require("chalk");
+chalk.blue("I am Chalk") // text color will be BLUE
+chalk.blue.italic("I am Chalk") // text color will be BLUE with italic
+chalk.blue.underline("I am Chalk") // text color will be BLUE with underline
+chalk.blue.inverse("I am Chalk") // blue background color with new text color
+
+
+2.Validator :- For validate data( return true/false boolen value)
+const EmailId = "satya@gmail.com";
+const emailValidator = validator.isEmail(EmailId);
+console.log("emailValidator"); o/p - true
+
+3. combination of chalk and validator: 
+console.log(
+  "Is email ?", emailValidator ? chalk.green.inverse(emailValidator): chalk.red.inverse(emailValidator),
+);
